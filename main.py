@@ -1,9 +1,23 @@
-# Settings for all things
-SETTINGS = (True, 2, '3')
+import os
+from dotenv import load_dotenv
 
-one = SETTINGS[0]
-two = SETTINGS[1]
-three = SETTINGS[2]
+load_dotenv()
 
-print(two)
-print(type(two))
+items = os.getenv('ITEMS')
+sum = os.getenv('SUM')
+order_num = os.getenv('ORDER_NUM')
+
+# 1. Касса перепутала номер в очереди с суммой. Надо поменять эти переменные местами
+...
+
+# 2. Для отчёта боссу, нужно посчитать среднюю стоимость каждой пиццы в заказе
+...
+
+# 3. Если в сумме заказа нету дробей (.00), нужно, чтобы нули не отрисовывались
+...
+
+# 4. Если у клиента в номере заказа есть цифра 2, ему положена скидка в 50%
+...
+
+# 5. Если кол-во пицц в заказе меньше 2, от номер в очереди нужно сократить на 5
+...
