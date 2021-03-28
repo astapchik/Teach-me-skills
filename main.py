@@ -25,3 +25,4 @@ if '2' in result:
 else:
     print("Скидка 0%. Сумма заказа: ", float(sum))
 # 5. Если кол-во пицц в заказе меньше 2, от номер в очереди нужно сократить на 5
+print((int(order_num) - 5) if int(items) < 2 else int(order_num))
