@@ -11,10 +11,9 @@ order_num = os.getenv('ORDER_NUM')
 # меняем местами
 sum, order_num = order_num, sum
 print(items, sum, order_num)
-
 # 2. Для отчёта боссу, нужно посчитать среднюю стоимость каждой пиццы в заказе
-...
-
+order_num, sum = sum, order_num
+print('Привет Boss! Средняя стоимость пиццы в заказе: ', float(sum) / int(items))
 # 3. Если в сумме заказа нету дробей (.00), нужно, чтобы нули не отрисовывались
 ...
 
